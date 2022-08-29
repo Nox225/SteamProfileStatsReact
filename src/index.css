@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #c5c3c0;
+}
+
+body{
+  display: flex;
+  background-color: #101822;
+  overflow-x: hidden;
+}
+
+.title{
+  display: flex;
+  margin: auto;
+  color: #62b9e9;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.game-list{
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+  background-color: #1b2838;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(255, 255, 255, 0.1);
+  margin: 5vh 80px 0px 80px;
+  overflow: auto;
+  width: 3320px;
+}
+
+.chart {
+  border-radius: 8px;
+  background-color: #62b9e9;
+  box-shadow: 0 3px 15px rgba(26, 110, 119, 0.8);
+  width: 50px;
+}
+
+.game{
+  align-self: flex-end;
+  width: 50px;
+}
+
+.playtime{
+  text-align: center;
+  margin-top: 3px;
+  font-size: 18px;
+}
+
+.icon{
+  justify-content: center;
+  width: 50px;
+  border-radius: 5px;
+  /* position: relative; */
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #101822;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #62b9e9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.search{
+  outline: none;
+  color: #62b9e9;
+  padding: 3px 15px;
+  font-size: 30px;
+  border-radius: 100px;
+  background-color: #1b2838;
+  border: rgb(62, 125, 184) 3px solid;
+  box-shadow: 0 3px 15px rgba(26, 110, 119, 0.8);
+}
+
+.navbar{
+  background-color: #1b4154;
+  height: 100px;
+  box-shadow: 0 3px 15px rgba(26, 110, 119, 0.5);
+  display: flex;
+  align-items: center;
+  width: 3500px;
+}
+
+.nav-container{
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.game-name{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  cursor: default;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  transition: 0.1s ease;
+  background-color: #101822;
+  box-shadow: 0 3px 15px rgba(26, 110, 119, 0.5);
+  /* margin-top: 50px; */
+}
+
+.game-name:hover{
+  opacity: 1;
+  transform: scale(3.5);
+  font-size: 7px;
+  z-index: 2;
+}
